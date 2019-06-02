@@ -1,0 +1,61 @@
+.hidden { display: none }
+
+
+body {
+	display: flex;
+	justify-content: center;
+	background-image: url(../includes/back.jpg);
+	background-repeat: repeat;
+	background-color: #333;
+	color: white;
+	font-family: 'Luckiest Guy', sans-serif;
+	font-size: 16px;
+}
+
+header{
+	background-color: #333;
+	width: 960px;
+}
+
+
+#music-board { 
+	width: 100%;
+	text-align: center; 
+}
+
+.stage, .lineup {
+	margin-top: 40px;
+	height: 400px;
+	display: inline-block;
+	border: medium solid #333;
+	background-color: #000;
+	color: inherit;
+	overflow: hidden;
+}
+
+.stage {
+	width: 640px;
+	height: 600px;
+}
+
+.lineup { 
+	width: 300px;
+	height: 600px; 
+}
+
+.drop-zone {
+	width: 24.6%;
+	height: 24.6%;
+	border: thin dashed white;
+	float: left;
+	position: relative;
+}
+
+.drop-zone img {
+	float: left;
+	height: 100%;
+	width: auto !important;
+	padding: 0 !important;
+	cursor: default;
+	position: absolute;
+}
