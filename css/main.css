@@ -6,20 +6,20 @@ main {
 	font-family: lush, sans-serif;
 	font-style: normal;
 	font-weight: 400;
-	background:rgba(21,22,43,1);
-	width: 100%;
-	height: 760px;
-	background-image: url(../images/background_option11.jpg);
+	/*background:rgba(21,22,43,1);*/
+	max-width: 1800px;
+	/*height: 760px;*/
+	background-image: url(../images/background_option10.jpg);
 	background-repeat: no-repeat;
-	background-position: 50% 50%;
-	height: 750px;
+	/*background-position: 50% 50%;*/
 }
 
 .container {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: space-between;
 	margin: auto;
+	margin-top: 50px;
 	width: 880px;
 	height: 720px;
 	/* background-image: url(../images/background_opt.jpg); */
@@ -113,7 +113,7 @@ main {
 
 .reset-button {
 	margin: auto;
-	margin-top: 20px;
+	margin-top: 40px;
 	display: flex;
 	flex-direction: row;
 	width: 100%;
@@ -123,13 +123,14 @@ main {
 button {
 	margin: auto;
 	width: 100px;
-	height: 40px;
+	height: 100px;
 	font-size: 16px;
 	font-weight: 400;
 	color: rgba(220,220,220,1);
 	background-color: rgba(255,162,240,.7);
 	border-color: rgba(254,1,216,.4);
-	border-radius: 10px;
+	border-width: 5px;
+	border-radius: 50%;
 	box-shadow: 0px 0px 30px rgba(254,1,216,.8);
 	text-shadow:  0px 0px 5px rgba(255,255,255,.3);
 
@@ -169,11 +170,20 @@ button:hover {
 	text-shadow: 0px 0px .5px rgba(0,0,0,.3);
 }
 
+.header{
+	font-size: 80px;
+	font-family: Angellina;
+	color: #ff0a89;
+	display: flex;
+	justify-content: center;
+	padding-top: 50px;
+	width: 100%;
+	text-shadow:  0px -3px 4px rgba(246,219,233,1);
+
+}
 .sub-titles {
-	padding: 4px 0 4px ;
-	margin: auto;
-	margin-bottom: 0;
-	margin-top: 0;
+	padding: 0px auto auto auto ;
+	margin: 0 auto 20px auto;
 	display: flex;
 	flex-direction: row;
 	font-size: 40px;
@@ -181,7 +191,7 @@ button:hover {
 	width: 100%;
 	justify-content: space-around;
 	align-content: space-around;
-		text-shadow:  0px -3px 4px rgba(255,255,255,1);
+	text-shadow:  0px -3px 4px rgba(255,255,255,1);
 
 	/* border: thin dotted white; */
 }
