@@ -142,7 +142,7 @@ button:hover {
 	color: rgba(255,255,255,.8);
 	background-color: rgba(255,162,240,.8);
 	border-color: rgba(254,1,216,.8);
-	border-radius: 10px;
+	border-radius: 50%;
 	box-shadow: 0px 0px 30px rgba(254,1,216,1);
 	border-width: 2.5px;
 	text-shadow:  0px 0px 4px rgba(255,255,255,1);
@@ -152,8 +152,10 @@ button:hover {
 	color: rgba(0,0,0,.6);
 	background-color: rgba(255,162,240,.0);
 	border-color: rgba(0,0,0,.6);
+	width: 70px;
+	height: 70px;
 	border-width: 2px;
-	border-radius: 10px;
+	border-radius: 50%;
 	box-shadow: 0px 0px 30px rgba(0,0,0,.3);
 	text-shadow: 0px 0px 10px rgba(0,0,0,.2);
 
@@ -165,14 +167,14 @@ button:hover {
 	background-color: rgba(255,162,240,.0);
 	border-color: rgba(0,0,0,1);
 	border-width: 2px;
-	border-radius: 10px;
+	border-radius: 50%;
 	box-shadow: 0px 0px 7px rgba(0,0,0,.6);
 	text-shadow: 0px 0px .5px rgba(0,0,0,.3);
 }
 
 .header{
 	font-size: 80px;
-	font-family: Angellina;
+	font-family: 'Great Vibes', cursive;
 	color: #ff0a89;
 	display: flex;
 	justify-content: center;
