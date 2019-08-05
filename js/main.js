@@ -28,14 +28,10 @@ let
       zone.addEventListener("drop", function(e) {
           e.preventDefault();
 
-          let
-						draggedElement = e.dataTransfer.getData("text/plain");
-
-
-
+          let draggedElement = e.dataTransfer.getData("text/plain");
 //if the "zone" has a child count of "0"
         	if (zone.childElementCount == 0 ) {
-//set audio source
+//set audio
 						newAudio = document.createElement('audio');
 						newAudio.loop = 'true';
 						newAudio.src = (`audio/${draggedElement}.mp3`);
@@ -49,27 +45,43 @@ let
 						zone.appendChild(newAudio);
 					};
 
+
+
+//set all audio to 0
 					let audioFile = document.querySelectorAll('#audio-file');
 
-					audioFile.forEach(file =>{
-						file.currentTime = 0;
+						audioFile.forEach(file =>{
+							file.currentTime = 0;
 					});
 //Play Audio
 						newAudio.play();
       });
   });
 
+//if piece is moved remove audio and class from last slot
+
+	// dropZones.forEach(zone =>{
+	//
+	// 	if (zone.childElementCount == 1 ){
+	//
+	// 			zone.classList.remove("drag-zone");
+	// 			zone.classList.add("drop-zone");
+	// 			zone.removeChild(document.getElementById('audio-file'));
+	//
+	// 	}else{
+	// 		return;
+	// 	}
+	// });
+
 	function closeLightBox(e) {
     event.preventDefault();
-
+//make the class display:none;
     lightBox.classList.add('hide-lightbox');
-
 	};
 
 	function reset(e) {
 
 		dropZones.forEach(zone => {
-
 			zone.classList.remove("drag-zone");
 			zone.classList.add("drop-zone");
 
